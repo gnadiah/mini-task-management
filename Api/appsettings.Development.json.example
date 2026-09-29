@@ -1,0 +1,22 @@
+{
+  "Logging": {
+    "LogLevel": {
+      "Default": "Information",
+      "Microsoft.AspNetCore": "Warning"
+    }
+  },
+  "ConnectionStrings": {
+    "SqlConnectionString": "Host=localhost;Port=5432;Database=mini_task_management;Username=postgres;Password=CHANGE_ME;Pooling=true;"
+  },
+  "Token": {
+    "AccessToken": {
+      "Issuer": "MiniTaskManagement.Api",
+      "Audience": "MiniTaskManagement.Client",
+      "SigningKey": "CHANGE_ME",
+      "ExpiresInMinutes": 60
+    },
+    "RefreshToken": {
+      "ExpiresInMinutes": 10080
+    }
+  }
+}
